@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практические работы</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,70 +13,43 @@
             justify-content: center;
             height: 100vh;
         }
-
-        h1 {
-            color: #333;
+    
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
             text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 30px;
-        }
-
-        a {
             text-decoration: none;
-            color: #333;
-            transition: color 0.3s;
-            margin-bottom: 10px;
-            background-color: #fff;
-            padding: 15px;
+            font-size: 16px;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
         }
 
-        a:hover {
-            color: #007bff;
-            background-color: #f7f7f7;
-            text-decoration: none;
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 600px) {
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="fluid-container">
+    <div class="button-container">
         <h1>Практические работы</h1>
         <h2>Весенний семетр 2023-2024</h2>
-        <ul>
-            <li>
-                <a href="https://disk.yandex.ru/d/nEVIHLmv6p-7Qw">Архитектура компьютеров и операционные системы</a>
-            </li>
-            <li>
-                <a href="https://disk.yandex.ru/d/qseh1ZEWa00Zgg">Сервисно-ориентированная архитектура и интеграция систем</a>
-            </li>
-            <li>
-                <a href="https://disk.yandex.ru/i/Xk4hls6f9z_9Lg">Обеспечение качества кода и код ревью</a>
-            </li>
-            <li>
-                <a href="https://disk.yandex.ru/i/v-mK_I7oxDXjSw">Разработка приложений на платформе Net (Дотнет) 1</a>
-            </li>
-            <li>
-                <a href="https://disk.yandex.ru/d/zxWhzIX3RqwRFw">Практикум по программированию на C# 1</a>
-            </li>
-            <li>
-                <a href="https://disk.yandex.ru/i/Nx2T6VWogJJ_iQ">Технологии цифрового образования</a>
-            </li>
-        </ul>
+        <a href="https://disk.yandex.ru/d/nEVIHLmv6p-7Qw" class="link-button">Архитектура компьютеров и операционные системы</a>
+        <a href="https://disk.yandex.ru/d/qseh1ZEWa00Zgg" class="link-button">Сервисно-ориентированная архитектура и интеграция систем</a>
+        <a href="https://disk.yandex.ru/i/Xk4hls6f9z_9Lg" class="link-button">Обеспечение качества кода и код ревью</a>
+        <a href="https://disk.yandex.ru/i/v-mK_I7oxDXjSw" class="link-button">Разработка приложений на платформе Net (Дотнет) 1</a>
+        <a href="https://disk.yandex.ru/d/zxWhzIX3RqwRFw" class="link-button">Практикум по программированию на C# 1</a>
+        <a href="https://disk.yandex.ru/i/Nx2T6VWogJJ_iQ" class="link-button">Технологии цифрового образования</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

@@ -33,6 +33,11 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
   .button-container {
     flex-direction: column;
     align-items: center;
